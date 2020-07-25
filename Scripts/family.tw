@@ -2,7 +2,7 @@
 
 <<set $hybridN to random(1,20)>>
 
-<<if $hybridN lte 15>>
+<<if $hybridN <= 15>>
 
 <<set $hybridization = "Not Hybrid">>
 <<set $familyN to random(1,11)>>
@@ -59,7 +59,7 @@ Your family is ''Miscellaneous''.
 
 <</if>> /* End Not Hybrid if statements */
 
-<<elseif $hybridN == 16||17||18>> /* Hybrid Arguments below */
+<<elseif $hybridN == 16 || $hybridN == 17 || $hybridN == 18>> /* Hybrid Arguments below */
 <<set $hybridization = "In-Family">>
 You are an in-family hybrid.
 

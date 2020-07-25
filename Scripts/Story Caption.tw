@@ -1,8 +1,8 @@
-Name: $name <<nobr>>
+Name: $name
 <<if $hybridization == "">>
 Family: $family
 Species: $species
-<<if $hybridization == "Not Hybrid">>
+<<elseif $hybridization == "Not Hybrid">>
 Family: $family
 Species: $species
 <<elseif $hybridization == "In-Family">>
@@ -15,7 +15,6 @@ Species $hybrid1 - $hybrid2
 Family: $family1 - $family2 - $family3
 Species: $hybrid1 - $hybrid2 - $hybrid3
 <</if>>
-<</nobr>>
 Height: $height cm
 Muscle (1-10): $muscle
 Fat (1-10): $fat

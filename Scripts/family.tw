@@ -5,7 +5,7 @@
 <<if $hybridN <= 15>>
 
 <<set $hybridization = "Not Hybrid">>
-<<set $familyN to random(1,11)>>
+<<set $familyN to random(1,10)>>
 
 <<if $familyN == 1>>
 Your family is ''canine''.
